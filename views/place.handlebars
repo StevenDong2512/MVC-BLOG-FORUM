@@ -1,0 +1,58 @@
+<div>
+  <header>
+    <img
+      class="img-responsive"
+      src="/images/{{place.place_image}}"
+      alt="Restaurant view"
+      width="100%"
+      height="50%"
+    />
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div>
+          <h2>About {{restaurant.restaurant_name}}</h2>
+          <hr class="hr-line" />
+
+          <p>{{restaurant.restaurant_description}}</p>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <h2>User Reviews</h2>
+        <hr class="hr-line" />
+
+        <div class="review">
+          {{#each restaurant.reviews as |reviews|}}
+            <h3>{{reviews.title}}</h3>
+            <p>{{reviews.reviews}}</p>
+            <p>Created by
+              {{reviews.user.username}}, on
+              {{reviews.created_date}}</p>
+          {{/each}}
+
+          {{#if loggedIn}}
+            <a
+              href="/api/user/comment"
+              onclick="location.href=this.href+'?xyz='+val;return false;"
+              class="btn btn-lg btn-secondary btn-block"
+            >Add Your Review</a>
+          {{else}}
+
+            <a href="/login">Login to add a review</a>
+
+          {{/if}}
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id="map" data-lat="{{lat}}" data-lng="{{lng}}"></div>
+
+</div>
+
+<script>
+  var val =
+  {{restaurant.id}}; //console.log("hello");
+</script>

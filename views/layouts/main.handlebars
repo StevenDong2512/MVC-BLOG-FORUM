@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thomas' Chess Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            Re-Taurantz
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="/">Places</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <!-- If the user is logged in, show a logout button -->
+              {{#if loggedIn}}
+                <a id="logout">Logout</a>
+              {{else}}
+                <!-- Otherwise, show a link to login -->
+                <a href="/login">Login</a>
+              {{/if}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main>
+      {{{body}}}
+    </main>
+
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; Steven Dong</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- If the user is logged in, load the JS script for when they logout -->
+    {{#if loggedIn}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
