@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Best Italian",
+        "reviews": "This was an extremely good experience. The food was delicious, fresh and well prepared. The service was excellent. We had the perfect waiter who was very helpful to my disabled companion.",
+        "user_id": 1,
+        "restaurant_id": 1
+    },
+    {
+        "title": "French in Sydney",
+        "reviews": "Dining at Bouillon L'Entrecote is like being transported to France - from the decor, French speaking staff l, white tablecloths and overall ambience it's the perfect place to have a romantic dinner.",
+        "user_id": 1,
+        "restaurant_id": 2
+    },
+    {
+        "title": "Great Chinese",
+        "reviews": "A beautifully decorated restaurant located just at the “entrance” of Chinatown. The restaurant itself is found within a shopping sort of complex with a very unassuming exterior.",
+        "user_id": 1,
+        "restaurant_id": 3
+    }
+]
