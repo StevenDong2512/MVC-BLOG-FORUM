@@ -1,0 +1,26 @@
+[
+    {
+        "restaurant_name": "Verde",
+        "cuisine": "Italian",
+        "image": "italian.png",
+        "description": "Chic restaurant plating Southern Italian fare, with a glam marble bar upstairs for cocktails.",
+        "restaurant_image": "italianslim.png",
+        "restaurant_description": "Immerse yourself in the tastes of Southern Italy in the heart of Darlinghurst Sydney. Verde is Italian for green, a nod to our commitment to using only the best fresh produce, which naturally complements Antonios passion for creating traditional yet innovative dishes."
+    },
+    {
+        "restaurant_name": "Bouillon lEntrecôte",
+        "cuisine": "French",
+        "image": "french.png",
+        "description": "Founded by French-born mates Johan Giausseran and Vincent Ventura, the 70-seat restaurant is part of Quay Quarter Lanes, a mixed-use hub one block from the harbour.",
+        "restaurant_image": "frenchslim.png",
+        "restaurant_description": "In France, a bouillon is a traditional, spacious restaurant that usually serves traditional French cuisine, in particular a Bouillon (broth) which has provided the name for this class of restaurants. The concept is simple, an amazing quality Sirloin Steak, accompanied by the delicious secret sauce, crispy homemade french fries, a simple salad & a glass of wine. Nothing more, Nothing less …"
+    },
+    {
+        "restaurant_name": "Spicy Joint",
+        "cuisine": "Chinese",
+        "image": "chinese.png",
+        "description": "A wildly popular Chinese chain in the middle of the CBD, repping the spicy flavours of Sichuan. The tome of a menu here is telling of the huge portions you get here.",
+        "restaurant_image": "chineseslim.png",
+        "restaurant_description": "Historically, Australian restaurant chains can be hit-and-miss in terms of quality. China, on the other hand, has premium chains, and over the years many of them have made their way to Sydney. Spicy Joint on Dixon Street is a prime example. The restaurant is extravagant, with sculpted timber features, plush furniture, a faux-pagoda over the restaurants entrance like an awning, and a private room that could win a design award."
+    }
+]

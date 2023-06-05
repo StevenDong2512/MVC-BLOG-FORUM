@@ -10,17 +10,17 @@
   </div>
   <!-- /.row -->
   <div class="row">
-    {{#each places as |place|}}
-      <div class="col-md-3 portfolio-item">
-        <a href="/{{place.id}}">
+    {{#each restaurants as |restaurant|}}
+      <div class="col-md-4 portfolio-item">
+        <a href="/{{restaurant.id}}">
           <img
             class="img-responsive"
             src="/images/{{place_name}}.png"
-            alt="{{place_name}}"
+            alt="{{restaurant_name}}"
           />
         </a>
         <h3>
-          <a href="/{{place.id}}">{{place_name}}, {{cuisine}}</a>
+          <a href="/{{restaurant.id}}">{{restaurant_name}}, {{cuisine}}</a>
         </h3>
         <p>{{description}}</p>
       </div>
